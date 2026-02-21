@@ -335,7 +335,7 @@ function AssumptionsPanel() {
         label="Budget Cap"
         field="budgetCapUSD"
         min={50_000_000}
-        max={500_000_000}
+        max={700_000_000}
         step={5_000_000}
         format={(v) => `$${(v / 1_000_000).toFixed(0)}M`}
       />

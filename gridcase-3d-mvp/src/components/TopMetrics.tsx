@@ -189,6 +189,33 @@ export default function TopMetrics() {
           {status === 'running' ? '⏳ Simulating…' : 'No simulation run yet — configure and run a scenario.'}
         </div>
       )}
+
+      {/* Spacer */}
+      <div style={{ flex: 1 }} />
+
+      {/* Open Visualizer button */}
+      <a
+        href="/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 6,
+          padding: '6px 16px',
+          borderRadius: 8,
+          background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+          color: '#fff',
+          fontSize: 12,
+          fontWeight: 700,
+          textDecoration: 'none',
+          flexShrink: 0,
+          cursor: 'pointer',
+          border: 'none',
+        }}
+      >
+        Open Visualizer
+      </a>
     </div>
   );
 }

@@ -68,7 +68,7 @@ export default function Header() {
                         Request a Demo
                     </a>
                     <a
-                        href="index.html"
+                        href="http://localhost:5175"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-pill btn-pill-light hidden md:inline-flex"

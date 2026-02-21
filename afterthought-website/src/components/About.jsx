@@ -31,9 +31,8 @@ export default function About() {
                         <Layers size={20} />
                     </div>
                     <h2 className="text-4xl md:text-5xl font-medium leading-[1.1] tracking-tight" style={{ color: 'var(--color-text-secondary)' }}>
-                        A Purpose-Built{' '}
-                        <span style={{ color: 'white' }}>Vertical AI Native</span>{' '}
-                        Platform Company
+                        Infrastructure Fails{' '}
+                        <span style={{ color: 'white' }}>When Systems Are Planned in Silos</span>
                     </h2>
                 </div>
 
@@ -41,22 +40,26 @@ export default function About() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     <div ref={r2.ref} style={r2.style}>
                         <p className="text-base leading-[1.9]" style={{ color: 'var(--color-text-secondary)' }}>
-                            AfterThought is a purpose-built AI technology company focused
-                            exclusively on the energy and utility industry. Guided by our
-                            <strong style={{ color: 'white' }}> People + AI</strong> philosophy,
-                            we deliver human-centered, intelligent operating systems that connect
-                            customers, field workers, operations, and the grid.
+                            In 2021, the Texas freeze left <strong style={{ color: 'white' }}>4.5 million homes without power</strong>.
+                            Water systems failed. Pipes burst. Transit shut down. It wasn't just a power
+                            outage — it was a <strong style={{ color: 'white' }}>cascading infrastructure failure</strong>.
+                            Today, cities still plan power, water, and transit in silos. As we electrify
+                            transit, expand renewables, and face more extreme weather, the complexity
+                            is compounding. Energy usage has grown 5× in the past decade and is expected
+                            to grow <strong style={{ color: 'white' }}>50× in the next</strong>.
                         </p>
                     </div>
                     <div ref={r3.ref} style={r3.style}>
                         <p className="text-base leading-[1.9] mb-10" style={{ color: 'var(--color-text-secondary)' }}>
-                            We empower energy providers worldwide to modernize operations, enhance
-                            customer experiences, and build resilient, sustainable communities.
-                            Our platform connects every stakeholder in the utility value chain
-                            through a single intelligent operating layer.
+                            AfterThought is a <strong style={{ color: 'white' }}>multi-system urban simulation platform</strong>
+                            {' '}that models how power grids, water, HVAC, and emergency services interact
+                            under strain. Planners select infrastructure projects, run 6-month scenario
+                            simulations with cascading failure physics, and see which communities are
+                            protected — and which are left behind. AI-powered project generation lets
+                            anyone propose ideas and instantly see their impact.
                         </p>
-                        <a href="#platform" className="btn-pill btn-pill-light" style={{ padding: '14px 32px', fontSize: '15px', marginTop: '4px' }}>
-                            Our People + AI Vision
+                        <a href="http://localhost:5175" target="_blank" rel="noopener noreferrer" className="btn-pill btn-pill-light" style={{ padding: '14px 32px', fontSize: '15px', marginTop: '4px' }}>
+                            Launch the Simulation
                             <ArrowRight size={16} />
                         </a>
                     </div>

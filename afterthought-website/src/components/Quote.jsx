@@ -33,18 +33,18 @@ export default function Quote() {
                         className="text-2xl md:text-3xl lg:text-4xl font-light leading-[1.4] tracking-tight mb-10"
                         style={{ color: 'white' }}
                     >
-                        We believe the future of energy management lies at the intersection of
-                        <span style={{ color: 'var(--color-accent-cyan)' }}> vertical AI</span>,
-                        <span style={{ color: 'var(--color-accent-blue)' }}> spatial intelligence</span>,
+                        We believe the future of infrastructure planning lies at the intersection of
+                        <span style={{ color: 'var(--color-accent-cyan)' }}> cascading failure simulation</span>,
+                        <span style={{ color: 'var(--color-accent-blue)' }}> equity-first analytics</span>,
                         and
-                        <span style={{ color: 'var(--color-accent-purple)' }}> human-centered design</span>.
+                        <span style={{ color: 'var(--color-accent-purple)' }}> AI-powered project design</span>.
                     </blockquote>
                 </div>
 
                 <div ref={r2.ref} style={r2.style}>
                     <p className="text-sm font-medium" style={{ color: 'white' }}>AfterThought Founding Team</p>
                     <p className="text-xs mt-1" style={{ color: 'var(--color-text-muted)' }}>
-                        Building the connected OS for the energy industry
+                        Building the simulation engine for resilient cities
                     </p>
                 </div>
             </div>

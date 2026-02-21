@@ -92,30 +92,31 @@ export default function Hero() {
                         color: 'var(--color-accent-cyan)', textTransform: 'uppercase',
                     }}>
                         <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#38BDF8', boxShadow: '0 0 8px rgba(56,189,248,0.6)' }} />
-                        AI-Native Energy Platform
+                        Infrastructure Simulation Engine
                     </span>
                 </div>
 
                 {/* Heading */}
                 <h1 ref={r2.ref} style={{ ...r2.style, color: 'white', marginBottom: '28px' }} className="text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.08] tracking-tight">
-                    The Industry's First<br />
-                    <span style={{ color: 'var(--color-text-secondary)' }}>AI-Native Grid Platform</span>
+                    Cities Don't Fail<br />
+                    <span style={{ color: 'var(--color-text-secondary)' }}>Because One System Breaks</span>
                 </h1>
 
                 {/* Subtitle */}
                 <div ref={r3.ref} style={{ ...r3.style, marginBottom: '44px' }}>
                     <p className="text-lg md:text-xl font-light" style={{ color: 'var(--color-text-secondary)', marginBottom: '12px' }}>
-                        AI Experience [ Customer &lt;&gt; Workforce &lt;&gt; Grid ]
+                        They fail because power, water, and transit depend on each other.
+                        We simulate how they interact under strain — before the next crisis hits.
                     </p>
                     <p className="text-xs font-medium tracking-widest uppercase" style={{ color: 'var(--color-text-muted)', letterSpacing: '0.2em' }}>
-                        Engage  ·  Empower  ·  Educate
+                        Simulate  ·  Analyze  ·  Prevent
                     </p>
                 </div>
 
                 {/* CTAs */}
                 <div ref={r4.ref} style={{ ...r4.style, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
-                    <a href="#platform" className="btn-pill btn-pill-white" style={{ padding: '16px 36px', fontSize: '15px' }}>Explore Platform →</a>
-                    <a href="#demo" className="btn-pill btn-pill-light" style={{ padding: '16px 36px', fontSize: '15px' }}>Request a Demo →</a>
+                    <a href="http://localhost:5175" target="_blank" rel="noopener noreferrer" className="btn-pill btn-pill-white" style={{ padding: '16px 36px', fontSize: '15px' }}>Launch Simulation Engine →</a>
+                    <a href="#platform" className="btn-pill btn-pill-light" style={{ padding: '16px 36px', fontSize: '15px' }}>See How It Works →</a>
                 </div>
             </div>
 
