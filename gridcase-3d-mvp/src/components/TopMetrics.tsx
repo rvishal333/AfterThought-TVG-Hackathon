@@ -71,6 +71,19 @@ export default function TopMetrics() {
   const totalCapex = usePlanStore((s) => s.totalCapex());
   const budgetCap = usePlanStore((s) => s.currentPlan.assumptions.budgetCapUSD);
   const role = usePlanStore((s) => s.role);
+  const selectedScenarioId = usePlanStore((s) => s.selectedScenarioId);
+  const projects = usePlanStore((s) => s.currentPlan.projects);
+  const assumptions = usePlanStore((s) => s.currentPlan.assumptions);
+
+  const visualizerUrl = useMemo(() => {
+    try {
+      const state = { scenario: selectedScenarioId, projects, assumptions };
+      const encoded = btoa(JSON.stringify(state));
+      return `http://localhost:5178?state=${encoded}`;
+    } catch {
+      return 'http://localhost:5178';
+    }
+  }, [selectedScenarioId, projects, assumptions]);
 
   const roleLabel: Record<string, string> = {
     utility_planner: 'Utility Planner',
@@ -195,7 +208,7 @@ export default function TopMetrics() {
 
       {/* Open Visualizer button */}
       <a
-        href="/"
+        href={visualizerUrl}
         target="_blank"
         rel="noopener noreferrer"
         style={{

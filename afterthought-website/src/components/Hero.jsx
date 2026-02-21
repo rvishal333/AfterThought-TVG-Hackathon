@@ -101,13 +101,12 @@ export default function Hero() {
                     Cities Don't Fail<br />
                     <span style={{ color: 'var(--color-text-secondary)' }}>Because One System Breaks</span>
                 </h1>
+                <p ref={r2.ref} className="text-xl md:text-2xl font-light" style={{ ...r2.style, color: 'var(--color-accent-cyan)', marginBottom: '20px', marginTop: '-12px' }}>
+                    Make Disaster an Afterthought. Use today's data to prepare for the future.
+                </p>
 
                 {/* Subtitle */}
                 <div ref={r3.ref} style={{ ...r3.style, marginBottom: '44px' }}>
-                    <p className="text-lg md:text-xl font-light" style={{ color: 'var(--color-text-secondary)', marginBottom: '12px' }}>
-                        They fail because power, water, and transit depend on each other.
-                        We simulate how they interact under strain — before the next crisis hits.
-                    </p>
                     <p className="text-xs font-medium tracking-widest uppercase" style={{ color: 'var(--color-text-muted)', letterSpacing: '0.2em' }}>
                         Simulate  ·  Analyze  ·  Prevent
                     </p>
