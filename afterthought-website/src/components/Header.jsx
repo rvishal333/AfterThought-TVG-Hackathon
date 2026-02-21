@@ -106,6 +106,9 @@ export default function Header() {
                         <a href="#demo" className="btn-pill btn-pill-white" style={{ padding: '10px 20px', fontSize: '13px', flex: 1, justifyContent: 'center' }}>
                             Request a Demo
                         </a>
+                        <a href="http://localhost:5175" target="_blank" rel="noopener noreferrer" className="btn-pill btn-pill-light" style={{ padding: '10px 20px', fontSize: '13px', flex: 1, justifyContent: 'center' }}>
+                            Open Engine
+                        </a>
                     </div>
                 </div>
             )}

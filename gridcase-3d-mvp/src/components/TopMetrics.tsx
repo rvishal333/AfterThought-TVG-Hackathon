@@ -79,9 +79,9 @@ export default function TopMetrics() {
     try {
       const state = { scenario: selectedScenarioId, projects, assumptions };
       const encoded = btoa(JSON.stringify(state));
-      return `http://localhost:5178?state=${encoded}`;
+      return `http://localhost:5177?state=${encoded}`;
     } catch {
-      return 'http://localhost:5178';
+      return 'http://localhost:5177';
     }
   }, [selectedScenarioId, projects, assumptions]);
 
