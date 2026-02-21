@@ -4,6 +4,7 @@ import { useSimulationStore } from '../stores/simulationStore';
 import { mockProjectCatalog, mockScenarios } from '../data/mockAustin';
 import { runSimulation } from '../sim/engine';
 import { Project, Role, Assumptions } from '../types/grid';
+import AIAnalysisPanel from './AIAnalysisPanel';
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
@@ -545,6 +546,10 @@ export default function RightPanel() {
 
       <Section title="Run">
         <RunControls />
+      </Section>
+
+      <Section title="Custom Project (AI)" defaultOpen={true}>
+        <AIAnalysisPanel />
       </Section>
 
       <Section title="Project Catalog">

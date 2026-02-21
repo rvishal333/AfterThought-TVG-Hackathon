@@ -60,7 +60,8 @@ export type ProjectType =
   | 'solar_storage'
   | 'water_infrastructure'
   | 'district_hvac'
-  | 'emergency_services';
+  | 'emergency_services'
+  | 'custom';
 
 export interface ProjectEffect {
   capacityBoostMW?: number;
@@ -118,14 +119,14 @@ export interface PlanVersion {
 export interface EventLogEntry {
   timestep: number;
   type:
-    | 'NODE_FAIL'
-    | 'NODE_RECOVER'
-    | 'CASCADE_FAIL'
-    | 'ZONE_OUTAGE'
-    | 'ZONE_RESTORE'
-    | 'OVERLOAD_WARNING'
-    | 'ZONE_SHIELDED'
-    | 'FLOOD_DAMAGE';
+  | 'NODE_FAIL'
+  | 'NODE_RECOVER'
+  | 'CASCADE_FAIL'
+  | 'ZONE_OUTAGE'
+  | 'ZONE_RESTORE'
+  | 'OVERLOAD_WARNING'
+  | 'ZONE_SHIELDED'
+  | 'FLOOD_DAMAGE';
   nodeId?: NodeId;
   zoneId?: ZoneId;
   fromNodeId?: NodeId;
